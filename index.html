@@ -7,31 +7,59 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/fontawesome.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="main">
+    <div class="container">
+      <div class="boxes">
+        <div class="input-field">
+          <label for="day">day</label>
+          <input type="text" id="day" value="">
+        </div>
+        <div class="input-field">
+          <label for="month">month</label>
+          <input type="text" id="month" value="">
+        </div>
+        <div class="input-field">
+          <label for="year">year</label>
+          <input type="text" id="year" value="">
+        </div>
+      </div>
+      <div class="divisor">
+        <div class="divisor-left">
+        </div>
+        <div class="divisor-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </div>
+        <div class="divisor-right">
+        </div>
+      </div>
+      <div class="results">
+        <p class="results--line"><span class="results--numbers">--</span>years</p>
+        <p class="results--line"><span class="results--numbers">--</span>months</p>
+        <p class="results--line"><span class="results--numbers">--</span>days</p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <span>
+      Challenge by 
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    </span> 
+    <span>
+      Coded by @fernastereo
+      <div class="social-links">
+        <a href="https://twitter.com/fernastereo"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://github.com/fernastereo"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.linkedin.com/in/fernando-cueto/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="http://fernandocueto.com/"><i class="fa-brands fa-chrome"></i></a>
+      </div>
+    </span>
+  </footer>
 </body>
 </html>
